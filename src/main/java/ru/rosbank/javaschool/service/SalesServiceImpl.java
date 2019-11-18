@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.Map;
 
-public class SalesServiceImpl {
+public class SalesServiceImpl implements SalesService {
     private String nameSales;
     private int countSales;
     private int priceSales;
@@ -46,9 +46,6 @@ public class SalesServiceImpl {
         return countS;
     }
 
-    public void setCountS(Map<String, Integer> countS) {
-        this.countS = countS;
-    }
 
     public Map sale(String name, int count){
         for (Map.Entry<String, Integer> entry : countS.entrySet()) {

@@ -1,5 +1,7 @@
 package ru.rosbank.javaschool.domain;
 
+
+
 public class Potatoes extends Product {
 
     public Potatoes(int id, String name, int price) {
